@@ -1,0 +1,339 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+table tbody tr{
+    cursor: pointer;
+}
+
+.btn-nav{
+    background-color: #1294A5;
+    color: #FFB31C;
+}
+
+.nav-itens{
+    border: 1px solid #1294A5;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    background-color: #1294A5;
+    color: #FFB31C;
+}
+
+.navbar-header>a:hover{
+/*    color: #000;
+    background-color: #eee;*/
+}
+
+.nav-itens>li>a:hover{
+    color: #FFFFFF;
+}
+
+.navbar-input{
+    float: left;
+    font-size: 16px;
+    height: 3.1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container-principal {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.masthead {
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Nav Header */
+.navbar-inverse-header{
+    background-color: #12A3A5;
+}
+
+.navbar-inverse-header .navbar-brand{
+    color: #ECECEC;
+}
+
+.navbar-brand-on{
+    background-color: #006F71;
+}
+
+#navbar-nome{
+    color: #FFFFFF;
+}
+
+/* Active state gets a caret at the bottom */
+.nav .active {
+  color: #fff;
+}
+.nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.item-nav{
+    cursor: pointer;
+}
+
+.navbar-nav>li>button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav>li>button {
+    line-height: 20px;
+}
+.nav>li>button {
+    position: relative;
+    display: block;
+}
+
+.dropdown-menu>li>span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+/*
+ * Blog name and description
+ */
+
+.header {
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.description {
+  font-size: 20px;
+  color: #999;
+}
+
+#header{
+    margin-bottom: 100px;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.post {
+  margin-bottom: 60px;
+}
+.post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 100px;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* 
+ * Alertas
+*/
+
+.alerta-erro{
+    color: #cd0a0a;
+    text-align: center;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
